@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dinil Hansara | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
   <header>
@@ -22,7 +23,7 @@
     </nav>
   </header>
 
-  <section id="about">
+  <section id="about" data-aos="fade-right">
     <img src="model 2025.jpeg" alt="Dinil Hansara">
     <div class="text">
       <h2>About Me</h2>
@@ -37,7 +38,7 @@
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="project-list">
       <div class="project">
@@ -57,7 +58,7 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" data-aos="fade-left">
     <h2>Contact Me</h2>
     <p>Have a project idea or want to collaborate? Reach out!</p>
     <a href="mailto:dinilhansara@gmail.com" class="btn">Email Me</a>
@@ -66,13 +67,18 @@
   <footer>
     <p>#DinilCreations | Built with 💙 by Dinil Hansara</p>
   </footer>
-</body>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
   const toggle = document.getElementById('darkToggle');
   toggle.addEventListener('click', () => {
     document.body.classList.toggle('dark');
   });
+
+  AOS.init();
 </script>
 
+</body>
 </html>
