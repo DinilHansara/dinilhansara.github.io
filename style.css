@@ -131,4 +131,39 @@
       text-align: center;
     }
   }
+
+  body.dark {
+    background: #121212;
+    color: #eee;
+  }
+  
+  body.dark header {
+    background: #1f1f1f;
+    color: #fff;
+  }
+  
+  body.dark nav a,
+  body.dark .btn,
+  body.dark .btn-small {
+    color: #eee;
+    border-color: #eee;
+  }
+  
+  body.dark nav a:hover {
+    border-bottom: 2px solid #eee;
+  }
+  
+  body.dark .project {
+    background: #222;
+    color: #ccc;
+  }
+  
+  #darkToggle {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    color: #a6c1ee;
+    cursor: pointer;
+  }
+  
   
