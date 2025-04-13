@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -9,52 +10,80 @@
     color: #333;
   }
   
-  .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 30px;
-  }
-  
   header {
+    background: #0d1b2a;
+    color: white;
+    padding: 60px 20px;
     text-align: center;
-    padding-bottom: 20px;
   }
   
-  h1 {
+  .hero h1 {
     font-size: 3em;
-    margin-bottom: 5px;
+    margin: 0;
   }
   
-  .tagline {
+  .hero p {
     font-size: 1.2em;
-    color: #777;
+    margin-top: 10px;
+    color: #a6c1ee;
   }
   
   nav {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   
   nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #007acc;
+    color: #a6c1ee;
     font-weight: bold;
     border-bottom: 2px solid transparent;
     transition: border 0.3s;
   }
   
   nav a:hover {
-    border-bottom: 2px solid #007acc;
+    border-bottom: 2px solid #a6c1ee;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #a6c1ee;
+    color: #0d1b2a;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
   }
   
   section {
-    margin: 50px 0;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
   }
   
-  .project-list {
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  #about img {
+    max-width: 200px;
+    border-radius: 100px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  #about .text {
+    flex: 1;
+  }
+  
+  #projects .project-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
+    margin-top: 30px;
   }
   
   .project {
@@ -64,30 +93,42 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   }
   
-  footer {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 0.9em;
-    color: #999;
+  .project h3 {
+    margin-top: 0;
   }
   
-  footer a {
+  .btn-small {
+    display: inline-block;
+    margin-top: 10px;
     color: #007acc;
+    font-weight: bold;
     text-decoration: none;
+    border: 2px solid #007acc;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .btn-small:hover {
+    background: #007acc;
+    color: white;
+  }
+  
+  #contact {
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9em;
+    color: #888;
   }
   
   @media (max-width: 700px) {
-    .project-list {
-      grid-template-columns: 1fr;
-    }
-  
-    h1 {
-      font-size: 2.2em;
-    }
-  
-    nav a {
-      display: block;
-      margin: 10px 0;
+    #about {
+      flex-direction: column;
+      text-align: center;
     }
   }
   
