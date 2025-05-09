@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DinilHansara/dinilhansara.github.io/static/css/main.bc2e6f92.css",
+    "main.js": "/DinilHansara/dinilhansara.github.io/static/js/main.9dbcc8c2.js",
+    "static/js/453.2500cb75.chunk.js": "/DinilHansara/dinilhansara.github.io/static/js/453.2500cb75.chunk.js",
+    "index.html": "/DinilHansara/dinilhansara.github.io/index.html",
+    "main.bc2e6f92.css.map": "/DinilHansara/dinilhansara.github.io/static/css/main.bc2e6f92.css.map",
+    "main.9dbcc8c2.js.map": "/DinilHansara/dinilhansara.github.io/static/js/main.9dbcc8c2.js.map",
+    "453.2500cb75.chunk.js.map": "/DinilHansara/dinilhansara.github.io/static/js/453.2500cb75.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc2e6f92.css",
+    "static/js/main.9dbcc8c2.js"
+  ]
+}
