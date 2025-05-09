@@ -15,9 +15,9 @@ const Header = () => {
       </div>
       <nav>
         <button id="darkToggle" onClick={toggleDarkMode}>🌙</button>
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/#projects">Projects</Link>
+        <Link to="/projects">Projects</Link>
         <a href="/cv.png" download>Resume</a>
         <a href="/blog.html">Blog</a>
         <Link to="/contact">Contact</Link>
